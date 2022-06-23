@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Implementación | VICAL Guide: VEGETATION INDICES CALCULATOR</title>
+  <title>Chapter 5 implementation | VICAL Guide: VEGETATION INDICES CALCULATOR</title>
   <meta name="description" content="This is a VICAL guide" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Implementación | VICAL Guide: VEGETATION INDICES CALCULATOR" />
+  <meta property="og:title" content="Chapter 5 implementation | VICAL Guide: VEGETATION INDICES CALCULATOR" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a VICAL guide" />
   <meta name="github-repo" content="CenidRaspaRiego/vical_en" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Implementación | VICAL Guide: VEGETATION INDICES CALCULATOR" />
+  <meta name="twitter:title" content="Chapter 5 implementation | VICAL Guide: VEGETATION INDICES CALCULATOR" />
   
   <meta name="twitter:description" content="This is a VICAL guide" />
   
@@ -171,13 +171,13 @@ div.csl-indent {
 <li class="chapter" data-level="4.2" data-path="configuration.html"><a href="configuration.html#using-digitized-polygons"><i class="fa fa-check"></i><b>4.2</b> Using digitized polygons</a></li>
 <li class="chapter" data-level="4.3" data-path="configuration.html"><a href="configuration.html#using-gee-vector-file"><i class="fa fa-check"></i><b>4.3</b> Using GEE vector file</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="implementación.html"><a href="implementación.html"><i class="fa fa-check"></i><b>5</b> Implementación</a>
+<li class="chapter" data-level="5" data-path="implementation.html"><a href="implementation.html"><i class="fa fa-check"></i><b>5</b> implementation</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="implementación.html"><a href="implementación.html#PriVis"><i class="fa fa-check"></i><b>5.1</b> First views</a></li>
-<li class="chapter" data-level="5.2" data-path="implementación.html"><a href="implementación.html#navigate-between-images"><i class="fa fa-check"></i><b>5.2</b> Navigate between images</a></li>
-<li class="chapter" data-level="5.3" data-path="implementación.html"><a href="implementación.html#vi-map-display"><i class="fa fa-check"></i><b>5.3</b> VI map display</a></li>
-<li class="chapter" data-level="5.4" data-path="implementación.html"><a href="implementación.html#time-series"><i class="fa fa-check"></i><b>5.4</b> Time series</a></li>
-<li class="chapter" data-level="5.5" data-path="implementación.html"><a href="implementación.html#download-information"><i class="fa fa-check"></i><b>5.5</b> Download information</a></li>
+<li class="chapter" data-level="5.1" data-path="implementation.html"><a href="implementation.html#PriVis"><i class="fa fa-check"></i><b>5.1</b> First views</a></li>
+<li class="chapter" data-level="5.2" data-path="implementation.html"><a href="implementation.html#navigate-between-images"><i class="fa fa-check"></i><b>5.2</b> Navigate between images</a></li>
+<li class="chapter" data-level="5.3" data-path="implementation.html"><a href="implementation.html#vi-map-display"><i class="fa fa-check"></i><b>5.3</b> VI map display</a></li>
+<li class="chapter" data-level="5.4" data-path="implementation.html"><a href="implementation.html#time-series"><i class="fa fa-check"></i><b>5.4</b> Time series</a></li>
+<li class="chapter" data-level="5.5" data-path="implementation.html"><a href="implementation.html#download-information"><i class="fa fa-check"></i><b>5.5</b> Download information</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="vical-in-gee.html"><a href="vical-in-gee.html"><i class="fa fa-check"></i><b>6</b> VICAL in GEE</a>
 <ul>
@@ -216,12 +216,12 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="implementación" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Implementación<a href="implementación.html#implementación" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="implementation" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> implementation<a href="implementation.html#implementation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This section presents an example of how to navigate and how the VICAL results are displayed.</p>
 <div id="PriVis" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> First views<a href="implementación.html#PriVis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When VIs are calculated using VICAL, a minimum of three mandatory and optional layers are shown on the map: (i) RGB combination <em>(Figure <a href="implementación.html#fig:figI1">5.1</a>)</em>, (ii)the selected VI <em>(Figure <a href="implementación.html#fig:figI2">5.2</a>)</em>, (iii) weighting factor (optional) calculated for each polygon <em>(Figure <a href="implementación.html#fig:figI3">5.3</a>)</em>, (iv) the regression map (optional) <em>(Figure <a href="implementación.html#fig:figI4">5.4</a>)</em> and (v) user drawn polygons. These maps, at first, are obtained from the first image found in the image collection..</p>
+<h2><span class="header-section-number">5.1</span> First views<a href="implementation.html#PriVis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When VIs are calculated using VICAL, a minimum of three mandatory and optional layers are shown on the map: (i) RGB combination <em>(Figure <a href="implementation.html#fig:figI1">5.1</a>)</em>, (ii)the selected VI <em>(Figure <a href="implementation.html#fig:figI2">5.2</a>)</em>, (iii) weighting factor (optional) calculated for each polygon <em>(Figure <a href="implementation.html#fig:figI3">5.3</a>)</em>, (iv) the regression map (optional) <em>(Figure <a href="implementation.html#fig:figI4">5.4</a>)</em> and (v) user drawn polygons. These maps, at first, are obtained from the first image found in the image collection..</p>
 The following images show some visualizations obtained from the URL that comes by default in VICAL ( <em>“Use vector file from GEE”</em> was activated) and activating the linear regression option with coefficients of a=1.15 and b=0.17.
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI1"></span>
 <img src="images/Figure51.png" alt="RGB Combination" width="85%" />
@@ -249,16 +249,16 @@ Figure 5.4: Regression Map (optional)
 </div>
 </div>
 <div id="navigate-between-images" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> Navigate between images<a href="implementación.html#navigate-between-images" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">5.2</span> Navigate between images<a href="implementation.html#navigate-between-images" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>VICAL creates a images collection defined by the user’s configuration; therefore, the user can navigate between the found images. To do this, a bar appears on the upper right side, where clicking on it displays a list where each row represents an image.</p>
-The short nomenclature used to name the images is: (Figure <a href="implementación.html#fig:figI5">5.5</a>): <em>Image number found<strong>+</strong> point <strong>+</strong> Image date (starting with year, month and day)<strong>+</strong> / <strong>+</strong> Sensor <strong>+</strong> / <strong>+</strong> Cloud percentage in the image.</em>
+The short nomenclature used to name the images is: (Figure <a href="implementation.html#fig:figI5">5.5</a>): <em>Image number found<strong>+</strong> point <strong>+</strong> Image date (starting with year, month and day)<strong>+</strong> / <strong>+</strong> Sensor <strong>+</strong> / <strong>+</strong> Cloud percentage in the image.</em>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI5"></span>
 <img src="images/Figure55.png" alt="List of images found" width="85%" />
 <p class="caption">
 Figure 5.5: List of images found
 </p>
 </div>
-Click on any row you want to view and the layers described in section <a href="implementación.html#PriVis">5.1</a> will appear (Figure <a href="implementación.html#fig:figI6">5.6</a>).
+Click on any row you want to view and the layers described in section <a href="implementation.html#PriVis">5.1</a> will appear (Figure <a href="implementation.html#fig:figI6">5.6</a>).
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI6"></span>
 <img src="images/Figure56.png" alt="Maps for the selected date" width="85%" />
 <p class="caption">
@@ -267,15 +267,15 @@ Figure 5.6: Maps for the selected date
 </div>
 </div>
 <div id="vi-map-display" class="section level2 hasAnchor" number="5.3">
-<h2><span class="header-section-number">5.3</span> VI map display<a href="implementación.html#vi-map-display" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The user can change the display values of the VI map by changing the range in which the <strong>maximum</strong> and <strong>minimum</strong> value varies, for this, it is necessary to enter the values in the option <em>“VI map display”</em> (Figure <a href="implementación.html#fig:figI7">5.7</a>) and press the Enter key with the keyboard.</p>
+<h2><span class="header-section-number">5.3</span> VI map display<a href="implementation.html#vi-map-display" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The user can change the display values of the VI map by changing the range in which the <strong>maximum</strong> and <strong>minimum</strong> value varies, for this, it is necessary to enter the values in the option <em>“VI map display”</em> (Figure <a href="implementation.html#fig:figI7">5.7</a>) and press the Enter key with the keyboard.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI7"></span>
 <img src="images/Figure57.png" alt="IV map display setting"  />
 <p class="caption">
 Figure 5.7: IV map display setting
 </p>
 </div>
-<p>The program recognizes when the value is changed and automatically creates the layer with the new display values (Figure <a href="implementación.html#fig:figI8">5.8</a>). It is possible to change these display values after the user has navigated between images.</p>
+<p>The program recognizes when the value is changed and automatically creates the layer with the new display values (Figure <a href="implementation.html#fig:figI8">5.8</a>). It is possible to change these display values after the user has navigated between images.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI8"></span>
 <img src="images/Figure58.png" alt="NDVI with values in the range [0,1]" width="85%" />
 <p class="caption">
@@ -290,8 +290,8 @@ Figure 5.9: NDVI with values in the range [0.3,1]
 </div>
 </div>
 <div id="time-series" class="section level2 hasAnchor" number="5.4">
-<h2><span class="header-section-number">5.4</span> Time series<a href="implementación.html#time-series" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The VI time series is obtained by clicking inside any polygon, therefore, the values are only for the selected polygon. The time series is shown in a graph where the average and standard deviation of the IV values are calculated. each point of the graph represents an image found according to the user’s configuration (Figure <a href="implementación.html#fig:figI10">5.10</a> y (Figure <a href="implementación.html#fig:figI11">5.11</a>)).</p>
+<h2><span class="header-section-number">5.4</span> Time series<a href="implementation.html#time-series" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The VI time series is obtained by clicking inside any polygon, therefore, the values are only for the selected polygon. The time series is shown in a graph where the average and standard deviation of the IV values are calculated. each point of the graph represents an image found according to the user’s configuration (Figure <a href="implementation.html#fig:figI10">5.10</a> y (Figure <a href="implementation.html#fig:figI11">5.11</a>)).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI10"></span>
 <img src="images/Figure60.png" alt="IV time series for the plot indicated"  />
 <p class="caption">
@@ -306,15 +306,15 @@ Figure 5.11: IV time series for the plot indicated
 </div>
 </div>
 <div id="download-information" class="section level2 hasAnchor" number="5.5">
-<h2><span class="header-section-number">5.5</span> Download information<a href="implementación.html#download-information" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-Three layers of the five shown on the map can be downloaded. Download buttons are displayed at the bottom of the configuration section (Figure <a href="implementación.html#fig:figI12">5.12</a>). The layers that can be downloaded are:
+<h2><span class="header-section-number">5.5</span> Download information<a href="implementation.html#download-information" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+Three layers of the five shown on the map can be downloaded. Download buttons are displayed at the bottom of the configuration section (Figure <a href="implementation.html#fig:figI12">5.12</a>). The layers that can be downloaded are:
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI12"></span>
 <img src="images/Figure62.png" alt="download options"  />
 <p class="caption">
 Figure 5.12: download options
 </p>
 </div>
-<p><strong>i) VI map:</strong> The Raster image is downloaded with VI values calculated and cropped for the area of interest. The download is done in TIF format, which can be viewed, for example, in QGIS <em>(Figure <a href="implementación.html#fig:figI13">5.13</a>)</em>.</p>
+<p><strong>i) VI map:</strong> The Raster image is downloaded with VI values calculated and cropped for the area of interest. The download is done in TIF format, which can be viewed, for example, in QGIS <em>(Figure <a href="implementation.html#fig:figI13">5.13</a>)</em>.</p>
 <p><strong>ii) vector file:</strong> The digitized polygon is downloaded in kml format, which can be viewed, for example, in Google Earth.</p>
 <p><strong>iii) regression map:</strong> This option is available if “regression map” is activated; the raster image is downloaded with values of the regression map and cropped for the area of interest, the download is done in TIF format that can be viewed, for example, in QGIS.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:figI13"></span>
