@@ -42,7 +42,7 @@ configuration
 general-configuration
 using-digitized-polygons
 using-gee-vector-file
-implementación
+implementation
 PriVis
 navigate-between-images
 vi-map-display
