@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {4.1}General configuration}{15}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Using digitized polygons}{18}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Using GEE vector file}{19}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Implementación}{21}{chapter.5}%
+\contentsline {chapter}{\numberline {5}implementation}{21}{chapter.5}%
 \contentsline {section}{\numberline {5.1}First views}{21}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Navigate between images}{23}{section.5.2}%
 \contentsline {section}{\numberline {5.3}VI map display}{23}{section.5.3}%

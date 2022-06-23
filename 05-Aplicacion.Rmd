@@ -1,4 +1,4 @@
-# Implementación
+# implementation
 
 This section presents an example of how to navigate and how the VICAL results are displayed. 
 
