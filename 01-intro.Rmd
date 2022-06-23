@@ -1,28 +1,23 @@
-# Introducción  {#intro}
+# Introduction  {#intro}
 
-El objetivo de esta sección es presentar los alcances de **VICAL** y como utilizarlo, ademas de, como implementar las librerías en cualquier Script de GEE. Se describen los índices de vegetación considerados en el programa y las colecciones de imagenes que se usan para calcularlo, cuáles son los resultados y cómo están formateados.
+This guide is intended to introduce the basics of running VICA and  how to implement the libraries in any GEE Script. It describes the VICAL conceptual framework, the vegetation indices (VIs) considered and the images collections used to calculate it, how to run it, what the outputs are, and how they are formatted.
 
-```{r fig3, echo=FALSE, out.width="25%", message=FALSE, warning=FALSE}
-knitr::include_graphics("./images/1.png")
-```
-
-VICAL fue desarrollado dentro de GEE <https://earthengine.google.com/> y fue codificado en JavaScript desde Earth Engine Code Editor <https://code.earthengine.google.com/>.
+VICAL was developed within the GEE platform <https://earthengine.google.com/> and was coded in JavaScript from the Earth Engine Code Editor <https://code.earthengine.google.com/>.
 
 
-## Alcances
-Los principios de diseño para **VICAL** fueron que deberia proporcionar para cualquier área (definida por el usuario) donde exista una imagen Landsat o Sentinel-2 la estimación de diferentes IVs aplicados en agricultura, además, de graficar la serie de tiempo de dicho índice para esa zona en el rango de fecha establecido por el usuario. **Todo sin que el usuario escriba una sola linea de codigo dentro de GEE o que lleve a cabo el pre-procesamiento de las imágenes.**
+## Scopes
+The design principles for **VICAL** were that it should provide for any area (defined by the user) where there is a Landsat or Sentinel-2 image, the estimation of different VIs applied in agriculture. In addition, to graph the VI time series for that area in the date range established by the user. **All without the user writing a single line of code within the GEE platform or performing image pre-processing.**
 
-VICAL tiene tres principales funciones:
+The VICAL tool has three main functions::
 
-**1.-** Mapas de índices de vegetación usando imágenes (libres de nubes) LandSat (4, 5, 7,8 y 9) y Sentinel-2 de cualquier poligono digitalizado por el usuario o archivo vector. 
+**1.-** calculation of 23 VIs with images (cloud-free) from Landsat (4, 5, 7, 8 and 9) and Sentinel-2 data from any user-defined area. 
 
-**2.-** El despliegue de series de tiempo de Indices de vegetación (media y desviación estándar) para polígonos (dibujados por el usuario o archivo vector) en un tiempo fijo con imagenes Landsat, sentinel o ambos. 
+**2.-** VI time series plot for each polygon drawn by the user with Landsat and Sentinel-2 or both satellites. 
 
-**3.-** Mapa de regresiones usando los IVs o productividad relativa. 
+**3.-** Regression maps (linear, quadratic, potential or exponential function) or weighting factor using VIs values. 
 
-En esta herramientas, se puede configurar algunos coeficientes de IV como en EVI, SAVI, entre otros.
+In this tool, you can configure some VI coefficients such as EVI, SAVI, among others.
 
-Creemos que la herramienta **VICAL** ahorra tiempo y evita el procedimiento trivial repetitivo asociado a los cálculos de IVs “manuales” (descarga de imágenes, procesamiento, etc.), que demanda diferentes tipos de software, que pueden conducir a errores humanos. 
+We believe that the **VICAL** tool saves time and avoids the trivial repetitive procedure associated with “manual” VI calculations (image download, processing, etc.), which requires different types of software, which can lead to human error.
 
-VICAL puede ser empleado para extraer rápidamente valores de índices de vegetación para su calibración en variables biofísicas agrícolas. 
-
+VICAL can be used to quickly extract VIs values for calibration in agricultural biophysical variables.

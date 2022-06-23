@@ -3,10 +3,9 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li class="toc-logo"><a href="https://inifapcenidraspa.users.earthengine.app/view/vical"><img src="./images/LOGO.png" height="43"></a></li>
+        <li class="toc-logo"><a href="https://inifapcenidraspa.users.earthengine.app/view/vical"><img src="./images/LOGO2.png" height="43"></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:

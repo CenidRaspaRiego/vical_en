@@ -1,45 +1,45 @@
 --- 
-title: "GUIA DE VICAL: Calculadora de indices de vegetación"
+title: "VICAL Guide: VEGETATION INDICES CALCULATOR"
 author: "INIFAP: Sergio Jiménez-Jiménez; Mariana Marcial-Pablo; Waldo Ojeda-Bustamante; Ernesto Sifuentes-Ibarra; Marco Inzunza-Ibarra, Ignacio Sánchez-Cohen"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 logo: ./images/LogoVICAL.png
-lang: es-MX
+lang: en
 output: bookdown::gitbook
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
-    \includegraphics[width=2in,height=2in]{./images/1.png}\LARGE\\}
+    \includegraphics[width=2in,height=2in]{./images/LOGO2.png}\LARGE\\}
   - \posttitle{\end{center}}
 geometry: margin=2cm
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
-description: "Esta es una guia de lo que se pueda hacer con VICAL"
+github-repo: CenidRaspaRiego/vical_en
+description: "This is a VICAL guide"
 ---
 
-# Bienvenidos {-}
+# Welcome {-}
 
 ```{r fig1, echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/LogoVICAL.png")
 ```
 
-Este sitio es una _guía_ para usar la herramienta **VICAL** desarrollada dentro de Google Earth Engine (GEE). VICAL es util para calcular de manera **online** 23 índices de vegetación (empleados comúnmente en aplicaciones agrícolas) de cualquier poligono(s) del mundo (digitalizado por el usuario o archivo vector) usando imágenes LandSat y Sentinel-2. Esto se logra sin que el usuario descargue/cargue imágenes satelitales o escriba una solo línea de código, solo necesita tener una conexión a internet. 
+This site is a guide to use the **VICAL** tool developed within Google Earth Engine (GEE). VICAL calculates **online** 23 vegetation indices (commonly used in agricultural applications) of any polygon(s) in the world (digitized by the user or vector file) using LandSat and Sentinel-2 images. This is done without the user downloading/uploading satellite images of writing a single line of code, they just need to have an internet connection. 
 
-Puede accesar a **VICAL** desde la dirección 
-<https://inifapcenidraspa.users.earthengine.app/view/vical>
+
+A web application is also available <https://inifapcenidraspa.users.earthengine.app/view/vical>.
 
 
 ```{r fig2, fig.cap='Vista principal de VICAL', echo=FALSE, message=FALSE, warning=FALSE, out.width="90%", fig.align = 'center'}
 knitr::include_graphics("./images/Figure4.png")
 ```
 
-Este trabajo fue desarrollado por investigadores del **INIFAP CENID-RASPA** y **CEVAF**. Dentro de las mejoras que se planean en VICAL, es que mediante experimentación se logre la calibración de variables biofísicas de interés para diversos cultivos usando _indices de vegetacion (IV)_; y estos resultados estén disponibles en **VICAL** para que sea útil a otras personas y asi puedan monitorear facilmente variables relacionadas con ingenieria de riego. 
+This work was developed by researchers from **INIFAP CENID-RASPA** and **CEVAF**. Among the improvements planned for VICAL is that are intended for VICAL is that through experimentation the calibration of biophysical variables of interest for various crops is achieved using _vegetation indices (IV)_; and these results are available in **VICAL** to be useful to other people and thus they can easily monitor variables related to irrigation engineering. 
 
 
-_Vuelva a consultar de vez en cuando para conocer las nuevas aplicaciones de GEE, los scripts de ejemplo y las actualizaciones de VICAL. Puede intentar hacer una actualización completa en el sitio para asegurarse de ver los cambios recientes (lo que está viendo podría ser una versión del sitio previamente almacenada en caché)_
+_Please check back occasionally for new GEE applications, example scripts, and VICAL updates. You might try doing a hard refresh on the site to make sure you see recent changes (what you’re looking at might be a previously cached version of the site)_
 
-_Sí tiene alguna duda o sugerencia o quiere participar en el proyecto puede escribir al correo **jimenez.sergio@inifap.gob.mx**_
+_If you have any questions or suggestions or wish to participate in the project, you can write to the email **jimenez.sergio@inifap.gob.mx**_
 

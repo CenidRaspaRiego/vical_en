@@ -1,13 +1,13 @@
-# Indices de Vegetación {#Iveg} 
-Los IVs permiten la relación cuantitativa y funcional con diferentes parámetros o variables de la vegetación. Son 23 IV considerados en VICAL y son los que comunmente se utilizan en aplicaciones agricolas [@Bannari2009],[@Xue2017].
+# Vegetation Indices {#Iveg} 
+The VIs allow the quantitative and functional relationship with different parameters or variables of the vegetation. There are 23 VIs considered in VICAL, these VIs are commonly used in agricultural applications [@Bannari2009],[@Xue2017].
 
-Los nombres de estos indices asi como su abreviatura se muestran en la siguiente lista:  
+The names of these VIs, their mathematical expression as well as their abbreviation are shown in the following list: 
 **1: ARVI**: Atmospherically resistant vegetation index*
 $$
 ARVI = \frac{p(NIR-rb)}{NIR+rb};     
 $$
 $$
-rb = {R-γ(B-R)}; \thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace γ=1.0 
+rb = {R-γ(B-R)}; \thinspace \thinspace  Default \thinspace value: \thinspace γ=1.0 
 $$
 
 **2: ATSAVI**: Adjusted transformed soil-adjusted vegetation index*
@@ -15,7 +15,7 @@ $$
 ATSAVI = \frac{a(NIR-aR-b)}{(R+aNIR-ab+X(1+a^2))};
 $$
 $$
-\thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace a= 1 ;\thinspace b=0; \thinspace X= 0.08      
+\thinspace \thinspace  Default \thinspace value: \thinspace a= 1 ;\thinspace b=0; \thinspace X= 0.08      
 $$
 **3: DVI: ** Difference vegetation index
 $$
@@ -26,11 +26,11 @@ $$
 EVI = \frac{2.5*(NIR-R)}{NIR+C_1 R-C_2 B+L};     
 $$
 $$
-\thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace C_1= 6.0 ;\thinspace C_2=7.5; \thinspace L= 1.0      
+\thinspace \thinspace  Default \thinspace value: \thinspace C_1= 6.0 ;\thinspace C_2=7.5; \thinspace L= 1.0      
 $$
 **5: EVI2***: Enhanced vegetation index
 $$
-EVI2 = \frac{2.5*(NIR-R)}{NIR+C_1 R+1}; \thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace C_1= 2.4      
+EVI2 = \frac{2.5*(NIR-R)}{NIR+C_1 R+1}; \thinspace \thinspace  Default \thinspace value: \thinspace C_1= 2.4      
 $$
 **6: GNDVI**: Green normalized difference vegetation index
 $$
@@ -67,7 +67,7 @@ NDWI = \frac{NIR-SWIR_1}{NIR+SWIR_1};
 $$
 **14: OSAVI**: Optimized soil adjusted vegetation index*
 $$
-OSAVI = \frac{1.16*(NIR-R)}{NIR+R+X}; \thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace X= 0.16     
+OSAVI = \frac{1.16*(NIR-R)}{NIR+R+X}; \thinspace \thinspace  Default \thinspace value: \thinspace X= 0.16     
 $$
 **15: RDVI**: Renormalized difference vegetation index
 $$
@@ -83,7 +83,7 @@ RVI = \frac{R}{NIR};
 $$
 **18: SAVI***: Soil adjusted vegetation index
 $$
-SAVI = \frac{(NIR-R)}{NIR+R+L} (1+ L);    \thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace L= 0.5  
+SAVI = \frac{(NIR-R)}{NIR+R+L} (1+ L);    \thinspace \thinspace  Default \thinspace value: \thinspace L= 0.5  
 $$
 **19: TVI**: Triangular vegetation index
 $$
@@ -91,7 +91,7 @@ TVI = 0.5*{[120(NIR-G)-200(R-G)]};
 $$
 **20: TSAVI***: Transformed soil adjusted vegetation index
 $$
-TSAVI = \frac{a(NIR-aR-b)}{R+aNIR-ab};  \thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace a= 1,   \thinspace b=0.    
+TSAVI = \frac{a(NIR-aR-b)}{R+aNIR-ab};  \thinspace \thinspace  Default \thinspace value: \thinspace a= 1,   \thinspace b=0.    
 $$
 **21: VARI**: Visible atmospherically resistant index
 $$
@@ -103,12 +103,12 @@ VIN = \frac{NIR}{R};
 $$
 **23: WDRVI***:  Wide dynamic range vegetation index
 $$
-WDRVI = \frac{∝NIR-R}{∝NIR+R)}; \thinspace \thinspace  Valor \thinspace por \thinspace defecto: \thinspace ∝= 0.2   
+WDRVI = \frac{∝NIR-R}{∝NIR+R)}; \thinspace \thinspace  Default \thinspace value: \thinspace ∝= 0.2   
 $$
 
-VICAL permite al usuario configurar algunos parámetros de VIs (como **ARVI, ATSAVI, EVI, EVI2, OSAVI, SAVI, ATSAVI y WDRVI**), es decir, todos aquellos IVs que necesitan, además de las bandas de espectro, alguna variable de ajuste
+VICAL allows the user to configure some VIs coefficient such as in **ARVI, ATSAVI, EVI, EVI2, OSAVI, SAVI, ATSAVI**, and **WDRVI**, that is, all those VIs that need, in addition to the spectrum bands, some adjustment variable.
 
-El nombre de las bandas con las abreviaturas que se emplearon en las ecuaciones de los IVs se muestra en la Tabla \@ref(tab:inOMBRE).
+The name of the bands with their abbreviations that were used in the VIs equations is shown in Table \@ref(tab:inOMBRE).
 ```{r inOMBRE, echo=FALSE, message=FALSE, warning=FALSE,}
 Abreviatura<-c("B",	"G",	"R",	"RE",	"NIR",	"SWIR1",	"SWIR2")
 Nombre <-c("Azul/Blue",	"Verde/Green",	"Rojo/Red",	"Borde Rojo/Red edge",	"Infrarrojo Cercano /Near infrared",	"Infrarrojo de onda corta 1/Shortwave infrared 1 ",	"Infrarrojo de onda corta 2/Shortwave infrared 2")
@@ -116,9 +116,9 @@ Nombre <-c("Azul/Blue",	"Verde/Green",	"Rojo/Red",	"Borde Rojo/Red edge",	"Infra
 inOMBRE<-data.frame(Abreviatura,Nombre)
 
 knitr::kable(inOMBRE, booktabs = TRUE, 
-  caption = 'Abreviatura de las bandas espectrales empleadas en las ecuaciones de los IV'
+  caption = 'Abbreviation of the spectral bands used in the VI equations'
 ) 
 ```
 
 
-_Si deseas agregar algun indice de vegetación puedes escribirnos al correo jimenez.sergio@inifap.gob.mx_
+_If you want to add another VI you can write to us at jimenez.sergio@inifap.gob.mx_

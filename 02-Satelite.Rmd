@@ -1,8 +1,6 @@
-# Satélites- Colección de imagenes {#Sat}
+# Satellites - Image Collection {#Sat}
 
-VICAL utiliza las colecciones de imágenes de reflectancia de la superficie terrestre corregidas atmosféricamente de LandSat (misiones 4, 5, 7, 8 y 9, con imágenes desde 1982 hasta el presente) y Sentinel-2. 
-
-En la Tabla \@ref(tab:Sat)  se muestra las características generales de estas colecciones de imágenes y el código de la colección de imágenes en GEE
+VICAL used the atmospherically corrected land surface reflectance images from Landsat (missions 4, 5, 7, 8 and 9, with images from 1982 to present) and Sentinel-2. Table \@ref(tab:Sat) shows the properties of these image collections in the GEE.
 
 ```{r Sat, echo=FALSE, message=FALSE, warning=FALSE,}
 Sensor<-c("Landsat-4 TM",	"Landsat-5 TM",	"Landsat-7 ETM+",	"Landsat-8 OLI",	"Landsat-9 OLI-2",	"Sentinel-2 (MSI)")
@@ -13,13 +11,13 @@ Sat<-data.frame(Sensor, Dataset.availability, Collection.ID)
 
 knitr::kable(
   Sat, booktabs = TRUE, 
-  caption = 'Colección de imagenes Landsat y Sentinel de GEE considerados en VICAL'
+  caption = 'Image collection of Landsat and Sentinel-2 within the Google Earth Engine (GEE)'
 ) 
 ```
 
-La ubicación de las diferentes bandas espectrales de estos sensores se muestra en la Figura \@ref(fig:figS1). 
-```{r figS1, fig.cap='Comparación de Lansat y Sentinel-2 y ubicacion de las bandas espectrales. Los números indican el número de bandas espectrales consideradas en cada sensor.', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+The location of the different spectral bands of these sensors is shown in Figure \@ref(fig:figS1). 
+```{r figS1, fig.cap='Comparison of Landsat and Sentinel-2 and location of the spectral bands. The numbers indicate the number of spectral bands considered in each sensor [@NASA2021]', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure21.png")
 ```
 
-
+In VICAL, there are four calculation options in VICAL with these image collections: **(i) Landsat (7, 8 and 9), (ii) Sentinel-2, (iii) Landsat (7, 8 and 9) and Sentinel-2 and (iv) Landsat (4 and 5)**. 

@@ -1,43 +1,43 @@
-# Configuración
+# Configuration
 
-Antes de calcular los IVs en VICAL se deben seleccionar una serie de parámetros que corresponden a la configuración. 
+Before calculating the VIs in VICAL, a series of parameters that correspond to the configuration must be selected. 
 
-## Configuración General 
-En principio, para estimar el IV de cualquier superficie el usuario tiene dos opciones: _i) digitalizar polígonos o ii) Usar un archivo vector de GEE_. Además, es necesario configurar una serie de opciones, estos son:
+## General configuration 
+When starting, to estimate the VI of any surface the user has two options: _i) digitize polygons or ii) Use a GEE vector file_. In addition, you need to configure other options, these are:
 
-**1). Rango de fechas: ** Se debe ingresar una fecha inicial y final en que desea estimar estos índices de vegetación (Figura \@ref(fig:figG1)). La fecha deben tener el siguiente formado: _Cuatro dígitos para el año, dos para el mes y dos para el día (AAAA-MM-DD)_.
-```{r figG1, fig.cap='TexBox de Rango de fechas', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+**1). Date range: ** It is necessary to enter a start and end date, which corresponds to the interval in which you want to estimate the VIs (Figure \@ref(fig:figG1)). The date must have the following format: AAAA-MM-DD, _Four digits for the year, two for the month and two for the day_.
+```{r figG1, fig.cap='Date Range TextBox', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure1.png")
 ```
 
 
-VICAL utiliza este intervalo de fechas para buscar imágenes disponibles y con estas estimar valores del índice de vegetación. VICAL por defecto establece la fecha final como la fecha actual y la fecha inicial un año atrás a la fecha actual.
+VICAL uses this interval to search for available Landsat or sentinel-2 images, and with these images estimate VIs. VICAL by default sets the end date as the current date and the start date one year ago to the current date.
 
-**2) porcentaje de nubes: ** Se debe ingresar un umbral máximo de nubes en las imágenes, por defecto es establecido en 30% (Figura \@ref(fig:figG2)).
-```{r figG2, fig.cap='TexBox de umbral de porcentaje de nubes', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+**2) Cloud Percentage: ** A maximum cloud threshold must be entered, by default it is set to 30% (Figure \@ref(fig:figG2)).
+```{r figG2, fig.cap='Cloud Percentage Threshold', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure2.png")
 ```
 
 
-**3). Satélite: ** de los satélites LandSat y Sentinel-2 (descritos en la sección \@ref(Sat) **Satélite**), se derivan cuatro opciones disponibles (Figura \@ref(fig:figG3)):
+**3). Satellite: ** four available options are derived from landsat and sentinel-2 satellites (described in the section \@ref(Sat) **Satellites**) (Figure \@ref(fig:figG3)):
 
-```{r figG3, fig.cap='Satelites y sensores disponibles en VICAL', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r figG3, fig.cap='Satellites and sensors available at VICAL', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure3.png")
 ```
 
 
-|  _**i) Landsat (7, 8 y 9):** proporciona imágenes LandSat de los sensores 7, 8 y 9 que se encuentren dentro del intervalo definido y con un umbral máximo de nubes. Los datos de Landsat 7 ETM+ se ajustaron espectralmente a las bandas espectrales de Landsat 8 y 9 (OLI y OLI-2) usando el procedimiento recomendado por [@Roy2016], para generar un solo conjunto de datos armonizados._ 
+|  _**i) Landsat (7, 8 y 9):** returns Landsat images from sensors 7, 8 and 9 that are within the user-defined interval and with a maximum cloud threshold. Landsat 7 ETM+ data were spectrally fitted to Landsat 8 and 9 spectral bands (OLI and OLI-2) using the procedure recommended by [@Roy2016] to generate a single set of harmonized data._ 
 
-|  _**ii)	Sentinel-2:** solo proporciona imágenes Sentinel-2 que se encuentren dentro del intervalo definido y con el umbral máximo de nubes._
+|  _**ii)	Sentinel-2:** returns Sentinel-2 images that are within the user-defined interval and with the maximum cloud threshold._
 
-|  _**iii)	Landsat (7, 8 y 9) y Sentinel-2**: Proporciona tanto imágenes Landsat (7, 8 y 9) como Sentinel-2. Los datos MSI (Sentinel-2) se ajustan espectralmente a las bandas espectrales Landsat 8 y 9 (OLI y OLI-2) usando el procedimiento recomendado por [@Claverie2018]. Los datos de Landsat 7 ETM+ se ajustaron espectralmente a las bandas espectrales de Landsat 8 y 9 (OLI y OLI-2) usando el procedimiento recomendado por [@Roy2016]. De tal manera que se genera un solo conjunto de datos armonizados._ 
+|  _**iii)	Landsat (7, 8 y 9) and Sentinel-2**: Returns both Landsat (7, 8 and 9) and Sentinel-2 images. Sentinel-2 MSI data are spectrally fit to Landsat-8 and 9 (OLI and OLI-2) spectral bands using the procedure recommended by [@Claverie2018]. Landsat 7 ETM+ data were spectrally fitted to Landsat 8 and 9 spectral bands (OLI and OLI-2) using the procedure recommended by [@Roy2016]. In this way a single set of harmonized data is generated._ 
 
-|  _**iv)	Landsat (4 y 5):** Proporciona imágenes LandSat de los sensores 4 y 5 que se encuentren dentro del intervalo definido y con un umbral máximo de nubes._
+|  _**iv)	Landsat (4 y 5):** returns LandSat -4 and 5 images that are within the defined interval and with a maximum cloud threshold._
   
 
 
-**4). Índice de vegetación: ** El usuario puede seleccionar entre 23 IVs comúnmente empleadas en aplicaciones agrícolas (Figura \@ref(fig:figG4)), para revisar las fórmulas de cada índice de vegetación ver sección \@ref(Iveg) **Índices de vegetación.**.
-```{r figG4, fig.cap='Selector de Indices de vegetción', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+**4). Vegetation index: ** The user can select from 23 VIs commonly used in agricultural applications (Figure \@ref(fig:figG4)), The formulas for each vegetation index are found in the section \@ref(Iveg) **Vegetation Indices**.
+```{r figG4, fig.cap='Vegetation Index Selector', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure5.png")
 ```
 
@@ -46,46 +46,46 @@ knitr::include_graphics("./images/Figure5.1.png")
 ```
 
 
-**5) otras funciones adicionales: ** VICAL permite seleccionar opciones adicionales (Figura \@ref(fig:figG6)), por ejemplo:
+**5) other additional functions: ** VICAL allows you to select additional options (Figure \@ref(fig:figG6)), for example:
 
 
-```{r figG6, fig.cap='Opciones en VICAL', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r figG6, fig.cap='Optional configuration in VICAL', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure9.png")
 ```
 
 
-| _**i)	Usar un archivo vector de GEE:** Como se mencionó en la parte inicial de esta sección, el usuario puede usar un archivo vector de GEE (tipo polígono). Cuando se selecciona esta opción se debe ingresar una dirección URL del archivo vector que ha sido cargado a GEE (Figura \@ref(fig:figG7)), de esta manera, aunque existan polígonos digitalizados VICAL reconoce que se deben calcular los índices de vegetación sobre los polígonos del archivo vector. _
+| _**i)	Use a GEE vector file:** As indicated in the initial part of this chapter, the user can use a GEE vector file (polygon type). For this option, you must enter a URL address (Table ID) of the vector file that has been uploaded to GEE (Figure \@ref(fig:figG7)). in this way, even if there are digitized polygons, VICAL recognizes that the VIs must be calculated on the polygons of the vector file. _
 
-```{r figG7, fig.cap='URL archivo vector de GEE', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r figG7, fig.cap='Table ID of the GEE vector file', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure10.png")
 ```
 
-| _**ii)	Mapa de regresión:** El usuario puede obtener como resultado un mapa de regresión tomando como base los valores de los IVs calculados, para ello puede seleccionar entre cuatro tipos de regresión (Figura \@ref(fig:figG8)): Lineal, cuadrático, potencial y exponencial y después ingresar los coeficientes de regresión._ 
+| _**ii) regression map:** The user obtains as a result a regression map based on the values of the calculated VIs. You can select between four types of functions: linear, quadratic, potential and exponential, and then you need to enter the adjustment coefficients for the selected function (Figure \@ref(fig:figG8))._ 
 
-```{r figG8, fig.cap='Funciones consideradas', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r figG8, fig.cap='Functions considered', echo=FALSE, message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure8.png")
 ```
 
 
-| _**iii)	Filtrar imágenes que cubran todo el polígono:** cuando se active esta opción se filtrar imágenes que cubran completamente el polígono(s) de la zona, de otra manera, se muestra imágenes aunque cubran un cierto porcentaje de la zona. Esta opción es útil para polígonos que abarcan superficies grandes (cientos de has)._
+| _**iii)	Filter images that cover the entire polygon:** Images that completely cover the polygon(s) are filtered, otherwise images are displayed even if they cover a certain percentage of the polygon. This option is useful for polygons that cover large surfaces (hundreds of hectares)._
  
-| _**iv)	Calcular factor de ponderación:** Es la relación entre el valor del índice en un píxel y el promedio del índice en el polígono (parcela). Se calcula por cada polígono digitalizado. Este factor en una parcela agrícola es un indicador normalizado del potencial productivo de cada píxel de una imagen. _
+| _**iv)	Calculate weighting factor (WF):** WF is the ratio of the VI value in a pixel to the average VI in the polygon (parcel). It is calculated for each digitized polygon. The WF in an agricultural parcel is a standardized indicator of the productive potential of each pixel of an image. _
 
 
-**5) Calcular: **: Cuando se tenga configurado las opciones se debe dar clic en **calculate** y se mostraran mínimo tres capas en el mapa: _**i) imagen RGB de la primera imagen encontrada en el intervalo establecido, ii) índices de vegetación**. _
+**5) Calculate: **: When the options have been configured, click on **calculate** and at least three layers will be shown on the map: _**i) RGB image of the first image found in the set interval, ii) VI map, iii) digitized polygons**. _
 
 
-## Usando poligonos digitalizados
-EL usuario puede digitalizar cualquier parcela (polígonos) usando las herramientas de dibujo que se encuentran en la esquina superior izquierda del mapa (Figura \@ref(fig:figG9)). El programa reconoce que se deben calcular los índices de vegetación sobre estos polígonos.
+## Using digitized polygons
+The user can digitize any parcel (polygons) using the drawing tools found in the upper left corner of the map (Figure \@ref(fig:figG9)). VICAL recognizes that VIs must be calculated on these polygons.
 
-```{r figG9, fig.cap='Herramientas de dibujo', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r figG9, fig.cap='Drawing tools', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure11.png")
 ```
 
-Esta opción es útil cuando son pocas parcelas donde se desea estimar IVs (Figura \@ref(fig:figG10)). O bien, también es útil cuando se desea descargar índices de vegetación de una zona en particular sin importar los limites parcelarios (Figura \@ref(fig:figG11)). 
+This option is useful when there are few parcels where you want to estimate VIs (Figure \@ref(fig:figG10)). O bien, It is also useful when you want to download VIs for a particular area regardless of parcel boundaries. (Figure \@ref(fig:figG11)). 
 
-Para editar el polígono o crear un nuevo polígono se debe dar clic en los botones _“Edit y New Polygon”_ respectivamente. Estas opciones están disponibles después de que se ha realizado un calculo.
-```{r figG10, fig.cap='Parcelas digitalizadas', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
+To edit the polygon or create a new polygon, click on the _“Edit and New Polygon”_ buttons, respectively. These options are available after a calculation has been performed.
+```{r figG10, fig.cap='Digitized parcels', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure12.png")
 ```
 
@@ -94,20 +94,20 @@ knitr::include_graphics("./images/Figure13.png")
 ```
 
 
-## Usando archivo vector
+## Using GEE vector file
 
-Para esta opción, el usuario debe ingresar el **URL** del archivo vector con el que desea realizar los cálculos; esto indica que debe tener una cuenta en GEE e importar un archivo vector tipo polígono en su cuenta.
+For this option, the user must enter the **URL (Table ID)** of the vector file with which the calculations are to be performed; this indicates that you must have a GEE account and import a polygon-type vector file into your account.
 
-La URL se puede obtener dando clic izquierdo sobre el archivo que se encuentra en la pestalla _**Assets**_ de su cuenta de GEE (Figura \@ref(fig:figG12)).
+The *Table ID** can be obtained by left clicking on the file found in the **Assets** tab of your GEE account (Figure \@ref(fig:figG12)).
 
-```{r figG12, fig.cap='detalles en GEE del archivo vector', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r figG12, fig.cap='vector file details', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure14.png")
 ```
 
 
-Una cuestión importante, para que el archivo vector se puede emplear en **VICAL** debe tener tener activado la casilla “Anyone can read” (Figura \@ref(fig:figG13)). 
+So that the vector file can be used in **VICAL**, you must have the “Anyone can read” box activated (Figure \@ref(fig:figG13)). 
 
-```{r figG13, fig.cap='poligono digitalizadas', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
+```{r figG13, fig.cap='Share option view', echo=FALSE, out.width="75%", message=FALSE, warning=FALSE, fig.align = 'center'}
 knitr::include_graphics("./images/Figure6.png")
 ```
 
