@@ -1,4 +1,4 @@
 
 # Citation
-
+[Kennedy, R.E.; Yang, Z.; Gorelick, N.; Braaten, J.; Cavalcante, L.; Cohen, W.B.; Healey, S. Implementation of the LandTrendr Algorithm on Google Earth Engine. Remote Sens. 2018, 10, 691. https://doi.org/10.3390/rs10050691](https://www.mdpi.com/2073-4395/12/7/1518)
 

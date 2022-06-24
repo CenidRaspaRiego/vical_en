@@ -33,7 +33,7 @@ A web application is also available <https://inifapcenidraspa.users.earthengine.
 
 
 ```{r fig2, fig.cap='Vista principal de VICAL', echo=FALSE, message=FALSE, warning=FALSE, out.width="90%", fig.align = 'center'}
-knitr::include_graphics("./images/Figure4.png")
+knitr::include_graphics("./images/Captura2.png")
 ```
 
 This work was developed by researchers from **INIFAP CENID-RASPA** and **CEVAF**. Among the improvements planned for VICAL is that are intended for VICAL is that through experimentation the calibration of biophysical variables of interest for various crops is achieved using _vegetation indices (IV)_; and these results are available in **VICAL** to be useful to other people and thus they can easily monitor variables related to irrigation engineering. 
