@@ -5,7 +5,7 @@ VICAL used the atmospherically corrected land surface reflectance images from La
 ```{r Sat, echo=FALSE, message=FALSE, warning=FALSE,}
 Sensor<-c("Landsat-4 TM",	"Landsat-5 TM",	"Landsat-7 ETM+",	"Landsat-8 OLI",	"Landsat-9 OLI-2",	"Sentinel-2 (MSI)")
 Dataset.availability <-c("22/08/1982 - 24/06/1993",	"16/03/1993 – 05/05/2012",	"01/01/1999-present",	"11/04/2013- present",	"31/10/2021- present",	"28/03/2017-present")
-Collection.ID<-c("LANDSAT/LT04/C02/T1_L2",	"LANDSAT/LT05/C02/T1_L2",	"LANDSAT/ LC08 /C01/T1_L2",	"LANDSAT/LE07/C01/T1_L2",	"LANDSAT/LC09/C02/T1_L2",	"COPERNICUS/S2_SR_HARMONIZED")
+Collection.ID<-c("LANDSAT/LT04/C02/T1_L2",	"LANDSAT/LT05/C02/T1_L2",	"LANDSAT/ LC08 /C02/T1_L2",	"LANDSAT/LE07/C02/T1_L2",	"LANDSAT/LC09/C02/T1_L2",	"COPERNICUS/S2_SR_HARMONIZED")
 
 Sat<-data.frame(Sensor, Dataset.availability, Collection.ID)
 
