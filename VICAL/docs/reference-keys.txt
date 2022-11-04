@@ -34,6 +34,13 @@ fig:figV3
 fig:figV4
 fig:figV6
 tab:Index
+fig:figA0
+fig:figA1
+fig:figA2
+fig:figA3
+fig:figA4
+fig:figA5
+fig:figA6
 intro
 scopes
 Sat
@@ -58,3 +65,7 @@ github-repository
 citation
 updates
 may-02-2022
+september-15-2022
+october-4-2022
+november-1-2022
+november-4-2022
