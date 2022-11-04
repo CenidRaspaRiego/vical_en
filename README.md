@@ -4,6 +4,3 @@ A web application is also available (https://inifapcenidraspa.users.earthengine.
 
 The VICAL help section in Spanish is available at: (https://serchjimenez09.github.io/VICAL_B/)
 # VICAL_es
-# vical_en
-# vical_en
-# vical_en
