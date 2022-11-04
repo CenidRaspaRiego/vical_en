@@ -24,3 +24,7 @@
 \contentsline {chapter}{\numberline {7}Citation}{33}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Updates}{35}{chapter.8}%
 \contentsline {section}{\numberline {8.1}May 02, 2022}{35}{section.8.1}%
+\contentsline {section}{\numberline {8.2}September 15, 2022}{35}{section.8.2}%
+\contentsline {section}{\numberline {8.3}October 4, 2022}{35}{section.8.3}%
+\contentsline {section}{\numberline {8.4}November 1, 2022}{35}{section.8.4}%
+\contentsline {section}{\numberline {8.5}November 4, 2022}{38}{section.8.5}%
