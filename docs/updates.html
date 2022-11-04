@@ -23,7 +23,7 @@
 <meta name="author" content="INIFAP: Sergio Jiménez-Jiménez; Mariana Marcial-Pablo; Waldo Ojeda-Bustamante; Ernesto Sifuentes-Ibarra; Marco Inzunza-Ibarra, Ignacio Sánchez-Cohen" />
 
 
-<meta name="date" content="2022-07-18" />
+<meta name="date" content="2022-11-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -92,7 +92,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -105,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -194,6 +194,10 @@ div.csl-indent {
 <li class="chapter" data-level="8" data-path="updates.html"><a href="updates.html"><i class="fa fa-check"></i><b>8</b> Updates</a>
 <ul>
 <li class="chapter" data-level="8.1" data-path="updates.html"><a href="updates.html#may-02-2022"><i class="fa fa-check"></i><b>8.1</b> May 02, 2022</a></li>
+<li class="chapter" data-level="8.2" data-path="updates.html"><a href="updates.html#september-15-2022"><i class="fa fa-check"></i><b>8.2</b> September 15, 2022</a></li>
+<li class="chapter" data-level="8.3" data-path="updates.html"><a href="updates.html#october-4-2022"><i class="fa fa-check"></i><b>8.3</b> October 4, 2022</a></li>
+<li class="chapter" data-level="8.4" data-path="updates.html"><a href="updates.html#november-1-2022"><i class="fa fa-check"></i><b>8.4</b> November 1, 2022</a></li>
+<li class="chapter" data-level="8.5" data-path="updates.html"><a href="updates.html#november-4-2022"><i class="fa fa-check"></i><b>8.5</b> November 4, 2022</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -223,6 +227,69 @@ div.csl-indent {
 <h2><span class="header-section-number">8.1</span> May 02, 2022<a href="updates.html#may-02-2022" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>-The user can enter the <strong>URL</strong> (ID) of a vector file uploaded from GEE.
 -The digitized polygon can be exported in <em>.kml.</em> format</p>
+</div>
+<div id="september-15-2022" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> September 15, 2022<a href="updates.html#september-15-2022" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<strong>Vegetatión index</strong>: The Green Chlorophyll Vegetation Index (GCVI) was added
+<span class="math display">\[
+GCVI = \frac{NIR}{G}-1;     
+\]</span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figA0"></span>
+<img src="images/FigureA0.PNG" alt="GCVI map"  />
+<p class="caption">
+Figure 8.1: GCVI map
+</p>
+</div>
+</div>
+<div id="october-4-2022" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> October 4, 2022<a href="updates.html#october-4-2022" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<strong>Select the satellite and sensor</strong>:For the first option, the user can select if he wants to work with the complete Landsat image collection (5,7, 8 and 9) or separately. If the options <strong>“L-5 and L-7”</strong> and <strong>“L-8 and L-9”</strong> is selected, ETM+ data are spectrally adjusted to OLI spectral bands using Roy et al., (2016). If only one of the two options (“L-5 and L-7” and “L-8 and L-9”) is selected, no spectral adjustment is made.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figA1"></span>
+<img src="images/FigureA1.PNG" alt="Landsat Satellite Image Collection"  />
+<p class="caption">
+Figure 8.2: Landsat Satellite Image Collection
+</p>
+</div>
+</div>
+<div id="november-1-2022" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> November 1, 2022<a href="updates.html#november-1-2022" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+The user can calculate the statistical values of the vegetation index in each pixel, all the images found in the defined interval are used. The options are shown in the following Figure. For the <strong>NONE</strong> option, the vegetation index (VI) is calculated for each pixel and for each image found in the defined interval. A list of images is displayed, therefore it is possible to calculate the VI time series and download the images by date.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figA2"></span>
+<img src="images/FigureA2.PNG" alt="statistical value options"  />
+<p class="caption">
+Figure 8.3: statistical value options
+</p>
+</div>
+For the <strong>NONE</strong> option, the vegetation index (VI) is calculated for each pixel and for each image found in the defined interval. A list of images is displayed, therefore it is possible to calculate the VI time series and download the images by date. While, for the other options, the result in a single image with the statistical values in the period.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figA3"></span>
+<img src="images/FigureA3.PNG" alt="Statistical pixel values from November 2021 to November 2022"  />
+<p class="caption">
+Figure 8.4: Statistical pixel values from November 2021 to November 2022
+</p>
+</div>
+</div>
+<div id="november-4-2022" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> November 4, 2022<a href="updates.html#november-4-2022" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>-User can get their current location when opening VICAL.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figA4"></span>
+<img src="images/FigureA4.png" alt="get current location"  />
+<p class="caption">
+Figure 8.5: get current location
+</p>
+</div>
+-It is possible to minimize and maximize the options panel so that it can be used on mobile phones.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figA5"></span>
+<img src="images/FigureA5.PNG" alt="Minimize and maximize panel button"  />
+<p class="caption">
+Figure 8.6: Minimize and maximize panel button
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figA6"></span>
+<img src="images/FigureA6.PNG" alt="VICAL on a cell phone"  />
+<p class="caption">
+Figure 8.7: VICAL on a cell phone
+</p>
+</div>
 
 </div>
 </div>
